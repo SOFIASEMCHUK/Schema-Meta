@@ -1,0 +1,327 @@
+@charset "UTF-8";
+@import "eternal.css";
+@import "fonts.css";
+@import "main.css";
+@import "footer.css";
+@import "reset.css";
+@import "cards.css";
+
+.container {
+    padding: 0 15px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+html {
+    font-family: 'Roboto';
+}
+.gray-bg {
+    background-color: #E5E5E5;
+}
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.clear::after {
+    clear:both;
+    content: '';
+    display: block;
+}
+.header__navigation-click {
+    text-align: center;
+    padding: 17px 27px 14px 0;
+    color: #333333;
+}
+.header__navigation {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 17px 0 17px 26px;
+}
+.header__navigation li {
+    display: inline-block;
+}
+.menu {
+    display: none;
+}
+.services {
+    display: none;
+}
+.contact {
+    display: none;
+}
+@media screen and (max-width:1002px) {
+    .main__pink-block {
+        margin: 0 auto;
+    }
+    .main__pink-block-card {
+        width: 100%;
+        max-width: 550px;
+        display: block;
+        margin: 0 auto;
+    }
+    .main__pink-block-card:last-of-type {
+        margin: 0 auto;
+    }
+    .col2 {
+        float: none;
+    }
+    .main__pink-block-card:first-of-type {
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width:800px) {
+    .footer__best-shop {
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .footer__best-shop-polit {
+        float: none;
+    }
+    .footer__best-shop-ruls {
+        float: none;
+        padding-bottom: 5px;
+    }
+    .footer__best {
+        padding-top: 24px;
+        padding-bottom: 20px;
+    }
+}
+@media screen and (max-width:745px) {
+    .menu {
+        display: block;
+        text-align: left;
+        padding: 5px 15px;
+    }
+    .menu i {
+        padding-left: 5px;
+    }
+    .header__navigation {
+        display: none;
+    }
+    .header.active .header__navigation {
+        position: absolute;
+        z-index: 1;
+        background-color: #f13c6fa7;
+        display: block;
+        margin-top: 27px;
+    }
+    .header__navigation li{
+        display: block;
+    }
+    .header__navigation li a{
+        color: white;
+    }
+
+    .contact {
+        display: block;
+        text-align: right;
+        padding: 5px 15px;
+    }
+    .contact i {
+        padding-right: 15px;
+    }
+    .heat__group-contact {
+        display: none;
+    }
+    .heat.active .heat__group-contact {
+        position: absolute;
+        z-index: 1;
+        background-color: #f13c6fa7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 16px;
+        right: 0;
+        padding: 10px;
+        margin: 0;
+        margin-right: 15px;
+    } 
+    .heat__group-contact a {
+        padding-bottom: 10px;
+    }
+    .heat__group-contact button {
+        margin: 0;    
+    }
+
+    .services {
+        display: block;
+        text-align: left;
+        padding: 5px 15px;
+    }
+    .main__navigation-services {
+        display: none;
+    }
+    .main__navigation.active .main__navigation-services {
+        position: absolute;
+        z-index: 1;
+        background-color: rgba(255, 255, 255, 0.68);
+        display: block;
+        margin-top: 27px;
+    }
+    .main__navigation-services li{
+        display: block;
+    }
+    .main__navigation-services li a{
+        color: #f13c6f;
+    }
+
+    .main__look .col-6 {
+        width: 50%;
+    }
+    .main__card .col-6 {
+        width: 50%;
+    }
+    .main__card-block {
+        margin-bottom: 15px;
+    }
+    .main__look-block {
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .main__look .col1 {
+        margin: 0;
+    }
+    .mb79 {
+        margin-bottom: 79px;
+    }
+
+    .footer__nav-navigation {
+        width: 46%;
+        padding-left: 0;
+        text-align: center;
+    }
+    .footer__desc {
+        padding: 0;
+    }
+    .footer__name {
+        padding: 60px 70px 24px;
+    }
+    .footer__line {
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (max-width:690px) {
+    .footer__sety {
+        float: none;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .footer__sety-pink-nav:last-of-type {
+        margin: 0;
+    }
+    .footer__group-contact {
+        display: flex;
+        flex-direction: column;
+        float: none;
+        text-align: center;
+    }
+    .footer__group-contact a {
+        padding: 10px;
+        text-align: center;
+    }
+    .footer__group-contact button {
+        margin: 0;
+    }
+    .footer__sety-pink {
+        float: none;
+        text-align: center;
+        margin-left: 20px;
+    }
+    .main__banner {
+        background-position: 54% 0;
+    }
+}
+@media screen and (max-width:560px) {
+    .footer__nav-navigation {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+    .footer__desc {
+        padding: 0;
+    }
+    .footer__name {
+        padding: 60px 0 24px;
+        max-width: 99px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .main__pink-block-card {
+        border: 5px solid #E5E5E5;
+        max-width: 400px;
+    }
+    .main__pink-block-card-title {
+        font-size: 16px;
+        line-height: 18px;
+        color: #FFFFFF;
+        padding: 20px 0 10px 20px;
+    }
+    .main__pink-block-card-title img{
+        padding-top: 20px;
+        padding-right: 20px;
+        width: 150px;
+        height: auto;
+    }
+    .main__pink-block-card-title .car {
+        width: 170px;
+        height: auto;
+    }
+    .main__pink-block-card-desc {
+        font-size: 10px;
+        line-height: 16px;
+        color: #FFFFFF;
+        padding: 0 0 16px 20px;
+        max-width: 200px;
+    }
+    .main__pink-block-card-desc-second {
+        font-size: 10px;
+        line-height: 16px;
+        color: #FFFFFF;
+        padding: 0 0 16px 20px;
+        max-width: 100px;
+    }
+    .main__pink-block-card-email {
+        padding: 5px 15px;
+        margin: 0px 0px 25px 20px;
+        font-size: 12px;
+    }
+    .main__pink-block-card-email:hover {
+        padding: 5px 20px;
+    }
+    .main__pink-block-card-buy {
+        padding: 5px 15px;
+        margin: 0px 0px 25px 20px;
+        font-size: 12px;
+    }
+    .main__pink-block-card-buy:hover {
+        padding: 5px 20px;
+    }
+}
+@media screen and (max-width:425px) {
+    .main__impuls-block-card .impuls__img {
+        width: 33.333%;
+    }
+}
+@media screen and (max-width:370px) {
+    .main__look .col-12 {
+        width: 100%
+    }
+    .main__card .col-12 {
+        width: 100%
+    }
+}
+@media screen and (max-width:500px) {
+    .main__banner {
+        background-image: url(../beauty/кресло.png);
+        background-position: 58% 0;
+    }
+}
